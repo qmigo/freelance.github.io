@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/1861f71565.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="mobile__toggle_off"  onclick="myFunction()">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-spinner fa-pulse" id="wheel"></span>
+
+        </div>
+        
+        <div class="logo">
+            <img src="logo.png" alt="" srcset="">
+        </div>
+        
+        <!-- <div class="menu"> -->
+            <ul class="list__items">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        <!-- </div> -->
+        <div class="contact__icons">
+            <div class="icons__hover"><span class="fa fa-mobile fa-lg "></span></div>
+            <div class="icons__hover"><span class="fa fa-envelope fa-sm"></span></div>
+            <div class="icons__hover"><span class="fa fa-whatsapp fa-lg"></span></div>
+        </div>
+    </nav>
+    <div class="mobile__toggle_on" id="mobile__on">
+        
+            <div class="vertical__box"><a href="">Home</a></div>
+            <div class="vertical__box"><a href="">About Us</a></div>
+            <div class="vertical__box"><a href="">Products</a></div>
+            <div class="vertical__box"><a href="">Contact</a></div>
+            
+    </div>
+    <!-- navbar -->
+
+
+    <!-- Primary section -->
+    <section class="primary">
+        <div class="blurr">
+            <div class="primary__content">
+                <span class="fs">Better &nbsp Living</span>
+                <span class="fm">Through</span>
+                <span class="fl">Moonex</span>
+            </div>
+            <div class="primary__gallery">
+                
+            </div>
+        </div>
+        
+    </section>
+    <!-- Primary section -->
+
+    <!-- secondary section -->
+        <section class="secondary">
+            <div class="secondary__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore vitae voluptates, dicta aut eveniet et corporis similique reprehenderit fugiat dolores repellendus molestiae eius? Tempore, reprehenderit. Officia atque nostrum rem sint.
+            </div>
+           
+
+        </section>
+
+    <!-- secondary section -->
+
+<script>
+    
+    function myFunction()
+    {
+
+
+        // To open Mobile
+        var x=document.getElementById("mobile__on");
+        var bars=document.getElementById("bars");
+        var wheel=document.getElementById("wheel");
+        if(x.style.display==="none")
+        {
+            x.style.display="flex";
+            wheel.style.display="flex";
+            bars.style.display="none";  
+        }
+        else
+        {
+            x.style.display="none";
+            wheel.style.display="none";
+            bars.style.display="flex";
+        }
+    }
+</script>    
+</body>
+
+</html>
